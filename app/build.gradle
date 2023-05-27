@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
     buildFeatures {
         viewBinding = true
     }
 
     defaultConfig {
         applicationId "com.example.lentit"
-        minSdk 28
-        targetSdk 31
+        minSdk 26
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
