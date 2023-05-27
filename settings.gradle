@@ -14,3 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "LentIt"
 include ':app'
+include ':data'
+include ':data'
+include ':core'
+include ':bam'
+include ':domain'
