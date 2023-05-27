@@ -3,6 +3,7 @@ package com.example.lentit.ui.notifications
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
 
 class NotificationsViewModel : ViewModel() {
 

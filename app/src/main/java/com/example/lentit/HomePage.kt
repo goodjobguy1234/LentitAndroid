@@ -21,16 +21,18 @@ class HomePage : AppCompatActivity() {
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-
         val navController = findNavController(R.id.nav_host_fragment_activity_home_page)
+
+        // TODO
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-//        val appBarConfiguration = AppBarConfiguration(
-//            setOf(
-//                R.id.navigation_home, R.id.navigation_chat, R.id.navigation_current, R.id.navigation_profile
-//            )
-//        )
-//        setupActionBarWithNavController(navController, appBarConfiguration)
+    //  val appBarConfiguration = AppBarConfiguration(
+    //            setOf(
+    //                R.id.navigation_home, R.id.navigation_chat, R.id.navigation_current, R.id.navigation_profile
+    //            )
+    //        )
+    //        setupActionBarWithNavController(navController, appBarConfiguration)
+
         navView.setupWithNavController(navController)
         actionBar?.hide()
         actionBar?.hideOffset
@@ -38,7 +40,7 @@ class HomePage : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        getWindow().setFlags(
+        window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
